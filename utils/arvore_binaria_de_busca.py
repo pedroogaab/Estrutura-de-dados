@@ -275,7 +275,7 @@ class Tree:
         else:
             
             if node==-1:
-                node = tree.root
+                node = self.root
             
             if node.data is not None:
                 
@@ -304,7 +304,7 @@ class Tree:
         else:
             
             if node==-1:
-                node = tree.root
+                node = self.root
             
             if node.data is not None:
                 
@@ -336,7 +336,7 @@ class Tree:
         else:
             
             if node==-1:
-                node = tree.root
+                node = self.root
             
             if node.data is not None:
                               
@@ -381,52 +381,52 @@ if __name__ == "__main__":
     #---------------------    
     # testando a arvore
     
-    tree = Tree()
-    tree.insert(6)
-    tree.insert(2)
-    tree.insert(7)
-    tree.insert(1)
-    tree.insert(3)
-    tree.insert(5)
-    tree.insert(4)
-    info = tree.strInorder()
+    tree1 = Tree()
+    tree1.insert(6)
+    tree1.insert(2)
+    tree1.insert(7)
+    tree1.insert(1)
+    tree1.insert(3)
+    tree1.insert(5)
+    tree1.insert(4)
+    info = tree1.strInorder()
     print('strInorder():', info)
     
-    info = tree.strPostorder()
+    info = tree1.strPostorder()
     print('strPostorder():', info)
     
-    info = tree.strPreorder()
+    info = tree1.strPreorder()
     print('strPreorder():', info)
             
-    res = tree.buscar(18)
+    res = tree1.buscar(18)
     print('buscar(18): ', res)
         
-    res = tree.buscar(23)
+    res = tree1.buscar(23)
     print('buscar(23): ', res)  
     
-    tree.delete(17)
-    print('delete(17):', tree.strPreorder())
+    tree1.delete(17)
+    print('delete(17):', tree1.strPreorder())
     
-    tree.delete(48)
-    print('delete(48):', tree.strPreorder())
+    tree1.delete(48)
+    print('delete(48):', tree1.strPreorder())
     
-    tree.delete(6)
-    print('delete(6):', tree.strPreorder())
+    tree1.delete(6)
+    print('delete(6):', tree1.strPreorder())
     
-    tree.delete(4)
-    print('delete(4):', tree.strPreorder())
+    tree1.delete(4)
+    print('delete(4):', tree1.strPreorder())
     
-    tree.delete(14)
-    print('delete(14):', tree.strPreorder())
+    tree1.delete(14)
+    print('delete(14):', tree1.strPreorder())
     
-    tree.delete(23)
-    print('delete(6):', tree.strPreorder())
+    tree1.delete(23)
+    print('delete(6):', tree1.strPreorder())
     
-    tree.delete(35)
-    print('delete(6):', tree.strPreorder())
+    tree1.delete(35)
+    print('delete(6):', tree1.strPreorder())
     
-    tree.insert(17)
-    print('insert(17):', tree.strPreorder())  
+    tree1.insert(17)
+    print('insert(17):', tree1.strPreorder())  
     
-    tree.delete(18)
-    print('delete(18):', tree.strPreorder())
+    tree1.delete(18)
+    print('delete(18):', tree1.strPreorder())
